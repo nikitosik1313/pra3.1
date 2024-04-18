@@ -1,0 +1,43 @@
+* {
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  
+  body {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+    background-color: darkgrey;
+  }
+  
+  .card {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    padding: 32px;
+    background-color: burlywood;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px #333;
+  }
+  
+  .card::before {
+    border-radius: 8px 8px 0 0;
+    top: -16px;
+    left: 25%;
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 32px;
+    width: 50%;
+  }
+  
+  h2 {
+    color: burlywood;
+    text-align: center;
+    padding-bottom: 16px;
+    font-weight: 800;
+    font-size: 32px;
+    text-shadow: -1px 3px 3px #333, 1px -3px 3px #fff;
+  }
